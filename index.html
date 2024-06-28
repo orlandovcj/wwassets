@@ -29,7 +29,7 @@ Below is a basic example of WaxJS functionality. To use this demo, click WAX Log
 <button id="login" onclick=login()>WAX Login</button>
 <p style="color:#ef9d47" id="loginresponse"></p>
 
-<strong>Saldo de WAX</strong>
+<strong>WAX Balance</strong>
 <p id="waxbalance"></p>
 
 <strong>NFTs na Carteira</strong>
@@ -72,7 +72,7 @@ Below is a basic example of WaxJS functionality. To use this demo, click WAX Log
 
             // Get WAX balance
             const balance = await getWaxBalance();
-            document.getElementById('waxbalance').innerText = 'WAX Balance: ' + balance + ' WAX';
+            document.getElementById('waxbalance').innerText = 'WAX Balance: ' + balance;
 
             // Get NFTs
             await loadNFTs();
